@@ -1,0 +1,69 @@
+.register {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    padding-top: 61px;
+    padding-bottom: 61px;
+
+    .formContainer {
+        flex: 3;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+
+            .inputContainer{
+                gap: 20px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                max-width: 170px;
+
+                .usernameDiv, .emailDiv, .passwordDiv {
+                    display: flex;
+                    flex-direction: column;
+
+                    p{
+                        font-size: 10px;
+                    }
+                }
+
+            }
+
+            .regButton{
+                padding: 10px;
+                border-radius: 5px;
+                border: none;
+                background-color: #336699;
+                color: white;
+                font-weight: bold;
+                cursor: pointer;
+                gap: 5px;
+            }
+
+            .regButton:disabled{
+                background-color: #77a2cd;
+                cursor: not-allowed;
+            }
+            
+            span{
+                color: rgba(255, 0, 0, 0.591);
+            }
+
+            a{
+                font-size: 14px;
+                color: gray;
+                border-bottom: 1px solid gray;
+                width: max-content;
+            }
+        }
+    }
+}

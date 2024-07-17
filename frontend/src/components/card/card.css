@@ -1,0 +1,134 @@
+.card {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: start;
+    width: 600px;
+    padding: 20px;
+    
+    
+    box-sizing: border-box;
+    box-sizing: content-box;
+    
+
+    .imageContainer {
+        height: 200px;
+        width: 280px;
+        margin: 0;
+        box-sizing: border-box;
+        
+
+        img {
+            width: 260px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+    }
+
+    .textContainer {
+        
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-content: start;
+        
+        h3{
+            margin: 0;
+            padding-top: 10px;
+        }
+
+        img {
+            width: 16px;
+            height: 16px;
+        }
+
+        .infoContainer{
+            flex: 2;
+            height: 200px;
+
+            .address {
+                font-size: 14px;
+                display: flex;
+                align-items: center;
+                padding-top: 10px;
+                margin: 0;
+                gap: 5px;
+                color: #888;
+            }
+        }
+
+        .title {
+            font-size: 20px;
+            font-weight: 600;
+            color: #444;
+            transition: all 0.4s ease;
+
+        }
+
+        .title:hover {
+            color: #000;
+            scale: 1.01;
+        }
+
+
+        
+
+        .info{
+            display: flex;
+            gap: 5px;
+            p {
+                font-size: 20px;
+                font-weight: 300;
+                padding: 5px;
+                border-radius: 5px;
+                background-color: #336699;
+                color: white;
+                width: max-content;
+            }
+        }
+
+
+        .bottom {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+
+            .features {
+                display: flex;
+                gap: 20px;
+                font-size: 14px;
+
+                .feature {
+                    display: flex;
+                    align-items: center;
+                    gap: 5px;
+                    background-color: whitesmoke;
+                    padding: 5px;
+                    border-radius: 5px;
+                }
+            }
+
+            .icons {
+                display: flex;
+                gap: 20px;
+
+                .icon {
+                    border: 1px solid #999;
+                    padding: 2px 5px;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                }
+
+                .icon:hover {
+                    background-color: lightgrey;
+                }
+            }
+        }
+    }
+}

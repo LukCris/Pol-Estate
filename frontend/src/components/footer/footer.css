@@ -1,0 +1,37 @@
+.footer{
+    margin-top: auto;
+    background-color: #336699;
+    color: white;
+    bottom: 0;
+    left: 0;
+    padding: 20px;
+
+    .advice{
+        padding: 5px;
+        font-size: 10px;
+    }
+
+    .wrapper{
+        display: flex;
+        justify-content: space-around;
+        align-items: start;
+        gap: 50px;
+        padding: 20px;
+
+        .logo{
+            width: 200px;
+        }
+
+    
+        .buttonContainer{
+            display: flex;
+            
+
+            .icon{
+                width: 25px;
+                height: 25px;
+                cursor: pointer;
+            }
+        }        
+    }
+}

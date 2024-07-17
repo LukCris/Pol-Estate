@@ -1,0 +1,146 @@
+.newPostPage {
+    height: 100%;
+    display: flex;
+    width: 100%;
+
+    h1{
+        text-align: center;
+    }
+
+    .formContainer {
+        flex: 3;
+        justify-content: center;
+        padding-left: 20px;
+        padding-right: 20px;
+        box-sizing: border-box;
+
+        .wrapper {
+            
+
+            form {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                gap: 20px;
+
+                .itemContainer{
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 10px;
+                    align-items: center;
+
+                    .item {
+                        width: 30%;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 5px;
+
+                        input {
+                            padding: 20px;
+                            border-radius: 5px;
+                            border: 1px solid gray;
+                            background-color: white;
+                        }
+
+                        select {
+                            padding: 19px;
+                        }
+
+                        textarea{
+                            height: 100%;
+                            width: 93%;
+                        }
+
+                        &.description {
+                            width: 100%;
+                            height: 320px;
+                        }
+
+                        .labelDes{
+                            display: flex;
+                            align-items: center;
+                            gap: 5px;
+
+                            img{
+                                width: 25px;
+                                height: 25px;
+                            }
+                        }
+                    }
+                }
+
+                .buttonContainer{
+                    display: flex;
+                    justify-content: center;
+                    width: 100%;
+                    height: 100%;
+                    padding: 10px;
+
+
+                    .sendButton {
+                        width: 35%;
+                        height: 50px;
+                        border-radius: 5px;
+                        border: none;
+                        background-color: #336699;
+                        color: white;
+                        font-weight: bold;
+                        cursor: pointer;
+                        
+                    }
+
+                    .sendButton:disabled{
+                        background-color: #77a2cd;
+                        cursor: not-allowed;
+                    }
+                }
+            }
+        }
+    }
+
+    .sideContainer {
+        flex: 2;
+        background-color: #77a2cd22;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 50px 0;
+        align-items: center;
+        justify-content: center;
+
+        .imageContainer{
+            max-height: 100%;
+            width: 500px;
+            display: flex;
+            flex-direction: column;
+            margin: 0 20px;
+            overflow-y: auto;
+            gap: 10px;
+            
+
+            img {
+                width: 300px;
+                max-height: 180px;
+                object-fit: cover;
+                border-radius: 5px;
+            }
+        }
+
+        
+
+        .cloudinary-button{
+            background-color: #336699;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+
+            .upload{
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
+}

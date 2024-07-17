@@ -1,0 +1,30 @@
+.profileInfo{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    .button {
+          
+        height: 20px;      
+        border-radius: 5px;
+        border: none;
+        background-color: #336699;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+        
+    }
+}
+
+.posts{
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+    align-items: center;
+    justify-content: space-between;
+    justify-items: center;
+    align-content: center;
+
+    flex-wrap: wrap;
+    gap: 20px
+}

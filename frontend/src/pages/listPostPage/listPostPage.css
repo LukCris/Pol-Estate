@@ -1,0 +1,117 @@
+.listPage {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    gap: 10px;
+    padding-bottom: 30px;
+
+    h1{
+        text-align: center;
+    }
+
+    .wrapper{
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        .formContainer{
+            form {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                justify-items: center;
+                align-items: center;
+                align-content: center;
+                gap: 50px;
+                padding: 20px;
+        
+                .item {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 2px;
+        
+                    label {
+                        font-size: 15px;
+                    }
+        
+                    input,
+                    select {
+                        width: 120px;
+                        padding: 10px;
+                        border: 1px solid #e0e0e0;
+                        border-radius: 5px;
+                        font-size: 14px;
+                    }
+                }
+        
+                button {
+                    width: 90px;
+                    padding: 10px;
+                    border: none;
+                    cursor: pointer;
+                    background-color: #336699;
+        
+                    img {
+                        width: 24px;
+                        height: 24px;
+                    }
+                }
+            }
+        }
+
+        .allPostButton{
+            width: 90px;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            background-color: #336699;
+            color: white;
+        }            
+    
+
+        .allPostButton:disabled{
+            background-color: #77a2cd;
+            cursor: not-allowed;
+        }
+    }
+
+    
+
+    .listContainer {
+        flex: 3;
+        height: 100%;
+
+        .wrapper{
+
+            padding-right: 50px;
+            display: flex;
+            flex-direction: row;
+            gap: 5px;
+            overflow-y: scroll;
+            padding-bottom: 50px;
+        }
+
+        .wrapper::-webkit-scrollbar{
+            display: none;
+        }
+    }
+
+    .postTrovati{
+        display: flex;
+        flex-direction: row;
+        border-top: 1px solid #999;
+        padding-top: 20px;
+        align-items: center;
+        justify-content: space-between;
+        justify-items: center;
+        align-content: center;
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 20px
+
+
+    }
+}

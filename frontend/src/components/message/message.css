@@ -1,0 +1,114 @@
+@keyframes slideInFromRight {
+    from {
+      transform: translateX(50%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+}
+  
+@keyframes slideInFromLeft {
+    from {
+        transform: translateX(-50%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+  
+.me .myMessageContainer {
+    animation: slideInFromRight 0.5s ease-out;
+}
+  
+.other .otherMessageContainer {
+    animation: slideInFromLeft 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+}
+  
+.wrapper {
+    animation: fadeIn 1s ease-out;
+}
+
+
+
+.myMessageContainer, .otherMessageContainer{
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    
+}
+
+.me{
+    display: flex;
+    justify-content: end;
+}
+
+.other{
+    display: flex;
+    justify-content: start;
+}
+
+
+.myMessageContainer{
+    margin-right: 10px;
+    width: 300px;
+    padding: 5px;
+    background-color: #D1E8FF;
+    color: #003366;
+
+    .myMessageName{
+        color: #1B5E20;
+        margin: 0;
+    }
+
+    .messageContainer{
+        display: flex;
+        align-items: end;
+        gap: 5px;
+    }
+
+    .myHour{
+        display: flex;
+        justify-content: end;
+        font-size: 10px;
+    }
+}
+
+.otherMessageContainer{
+    margin-left: 10px;
+    width: 300px;
+    padding: 5px;    
+    background-color: #F0F0F0;
+    color: #333333;
+
+    .otherMessageName{
+        color: #4A148C;
+        margin: 0;
+    }
+
+    .messageContainer{
+        display: flex;
+        align-items: end;
+        gap: 5px;
+    }
+
+    .otherHour{
+        display: flex;
+        justify-content: end;
+        font-size: 10px;
+    }
+}

@@ -1,0 +1,131 @@
+.homePage{
+    height: 100%;
+    
+
+    .textContainer{
+        margin: 0;
+        border: 0;
+        flex:3;
+        background-image: url("../../../public/grattacieli.png");
+        background-size: cover;
+        background-position: center;
+        background-color: rgba(0, 0, 0, 0.197);
+        opacity: 1;
+        width: 100%;
+        height: 350px;
+        color: white;
+        font-weight: bold;
+        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+        
+        .wrapper{
+            
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: #33669977;
+            height: 310px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            
+
+            h1.title{
+                font-size: 50px;
+                text-align: center;
+            }
+
+            p{
+                font-size: 20px;
+                padding-left: 5px;
+            }
+        }
+    }
+
+    
+    .infoContainer{
+        display: flex;
+        align-content: center;
+        align-items: stretch;
+        justify-content: center;
+        justify-items: center;
+        padding: 50px;
+        gap: 60px;
+    
+        .infoCard{
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-content: start;
+            flex-direction: column;
+            flex-wrap: wrap;
+            height: 100%;
+            width: 300px;
+            
+            
+            
+    
+            .infoIcon{
+                width: 100px;
+                height: 100px;
+            }
+    
+            .infoDesc{
+                display: flex;
+                flex-direction: column;
+                align-items: stretch;
+                align-content: center;
+                justify-content: center;
+                justify-items: center;
+                height: 100%;
+                
+    
+                .infoTitle{
+                    color: #336699;
+                    text-align: center;
+                }
+            }
+
+            .homeButton {
+                
+                height: 50px;
+                border-radius: 5px;
+                border: none;
+                background-color: #336699;
+                color: white;
+                font-weight: bold;
+                cursor: pointer;
+            }
+    
+            
+        }
+    }
+}
+
+
+
+
+
+
+
+.homePage .textContainer .wrapper .boxes{
+    display: flex;
+    justify-content: space-between;
+}
+.homePage .textContainer .wrapper .boxes h1.sopra{
+    text-align: center;
+    font-size: 36px;
+}
+
+.homePage .textContainer .wrapper .boxes h2.sotto{
+    font-size: 20px;
+    font-weight: 300;
+}
+
+
+
+
+
+
+
+
+

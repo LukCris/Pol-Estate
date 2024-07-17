@@ -1,0 +1,83 @@
+.postDetailPage {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.imageContainer {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    position: relative;
+}
+
+.imageContainer .image {
+    max-width: 80%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.imageContainer img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}
+
+.prevButton, .nextButton {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.prevButton {
+    left: 10px;
+    width: 60px;
+}
+
+.nextButton {
+    right: 10px;
+    width: 60px;
+}
+
+.infoImmobileContainer {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.infoImmobileContainer h1, 
+.infoImmobileContainer h2, 
+.infoImmobileContainer h3, 
+.infoImmobileContainer p {
+    margin-bottom: 10px;
+}
+
+.infoImmobileContainer button {
+    align-self: start;
+}
+
+
+.chatButton{
+    width: 90px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #336699;
+    color: white;
+}            
+
+
+.chatButton:disabled{
+    background-color: #77a2cd;
+    cursor: not-allowed;
+}
+
