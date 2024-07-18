@@ -1,3 +1,4 @@
+const path = require('path');
 const express = require("express")
 const cors = require("cors")
 const cookieParser = require("cookie-parser")
@@ -27,6 +28,9 @@ const io = new Server(server, {
         methods: ["GET", "POST"] 
     } 
 }) 
+
+// Per far restituire l'applicazione React
+app.use(express.static(path.resolve(__dirname, '../frontend/build')));
  
 //Definizione del socket e di tutti gli eventi da catturare, gestire e inviare 
 io.on("connection", (socket) => { 
@@ -73,7 +77,7 @@ server.listen(8080, ()=>{
 
 // Per restituire l'applicazione REACT
 app.get('*', (req,res) => {
-    res.sendFile(path.resolve(frontend/build, '../frontend/build', 'index.html'));
+    res.sendFile(path.resolve(_dirname, '../frontend/build', 'index.html'));
 });
 
 module.exports=io;
