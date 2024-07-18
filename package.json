@@ -1,7 +1,7 @@
 {
   "name": "fondamenti-web",
   "version": "1.0.0",
-  "main": "node frontend/index.jsx",
+  "main": "node frontend/src/index.jsx",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node backend/index.js",
