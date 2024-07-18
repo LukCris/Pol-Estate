@@ -29,7 +29,7 @@ const io = new Server(server, {
 }) 
 
 // Chiede a Node di servire i file per la nostra applicazione React
-app.use(express.static(path.resolve(frontend/build, '/')));
+app.use(express.static(path.resolve(frontend/build, '../frontend/build')));
  
 //Definizione del socket e di tutti gli eventi da catturare, gestire e inviare 
 io.on("connection", (socket) => { 
@@ -73,6 +73,11 @@ app.use("/api", router);
 server.listen(8080, ()=>{
     console.log("Server in ascolto")
 })
+
+// Per restituire l'applicazione REACT
+app.get('*', (req,res) => {
+    res.sendFile(path.resolve(frontend/build, '../frontend/build', 'index.html'));
+});
 
 module.exports=io;
 
