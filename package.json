@@ -4,7 +4,8 @@
   "main": "index.jsx",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node backend/index.js"
+    "start": "node backend/index.js",
+    "build": "cd client && npm install && npm run build"
   },
   "author": "",
   "license": "ISC",
@@ -20,5 +21,8 @@
     "socket.io": "^4.7.5",
     "socket.io-client": "^4.7.5",
     "universal-cookie": "^7.1.4"
+  },
+  "engines": {
+   "node": "20.13.1"
   }
 }
