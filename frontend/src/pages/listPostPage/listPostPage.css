@@ -6,8 +6,11 @@
     gap: 10px;
     padding-bottom: 30px;
 
-    .title{
-        text-align: center;
+    .filter{
+        padding-bottom: 10px;
+        .title{
+            text-align: center;
+        }
     }
 
     .wrapper{
