@@ -55,7 +55,7 @@ export default function ListPostPage() {
 
             <div className="filter">
 
-                <h1>Cerca la casa dei tuoi sogni</h1>
+                <h1 className="title">Cerca la casa dei tuoi sogni</h1>
 
                 <div className="wrapper">
 
