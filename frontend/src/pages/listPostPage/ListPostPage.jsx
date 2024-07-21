@@ -30,7 +30,7 @@ export default function ListPostPage() {
     }
 
     useEffect(() => {
-        fetch("http://localhost:3000/api/posts/findAllPost", {
+        fetch("http://localhost:8080/api/posts/findAllPost", {
             method: "get",
             headers: {
                 "Content-Type": "application/json"
